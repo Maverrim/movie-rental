@@ -126,13 +126,20 @@ const deleteItem = (e) => {
 
 function addItem(e) {
     e.preventDefault();
+
+    if (formTitle.value === '') {
+        alert('Title must be filed');
+    } else if (!document.querySelector('input[name="availability"]:checked')) {
+        alert('Availability option must be checked');
+    }
+
     const movie = {
        data: {
            title: formTitle.value,
            description: formDescription.value,
            author: formAuthor.value,
            available: document.querySelector('input[name="availability"]:checked').value === 'true',
-           year: formYear.value,
+           year: formYear.value
        }
     }
     movies.push(movie);

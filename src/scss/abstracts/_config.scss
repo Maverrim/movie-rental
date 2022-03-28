@@ -1,0 +1,43 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    position: relative;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.table-wrapper {
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.table__delete-btn {
+    color: #fff;
+    background-color: rgb(233, 60, 60);
+    border: none;
+}
+
+
+

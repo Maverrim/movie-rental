@@ -1,0 +1,45 @@
+// @import '../base/reset';
+// @import '../base/typography';
+// @import '../abstracts/config';
+// @import '../base/reset';
+// @import '../abstracts/mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 2rem 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @include for-phone-only {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        padding: 10px 0;
+        
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+                  
+        li a {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+
+               @include for-phone-only {
+                 margin: 0 auto;
+                 padding: 0 10px;
+               }
+
+            transition: color 0.3s ease;
+                
+        }
+
+        a:hover {
+            color: rgb(240, 122, 122);
+        }
+    }
+}

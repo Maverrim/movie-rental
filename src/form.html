@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rental - add movie</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__heading">Movie Rental 📽</h1>
+            <ul>
+                <li><a href="./index.html">Movie List</a></li>
+            </ul>
+        </header>
+         <h2>Add your movie!</h2>
+        <form id="movie-form" class="movie-form">
+            <div class="movie-form__row column">
+                <label for="title">Title</label>
+                <input id="title" type="text" placeholder="Type title" required>
+            </div>
+             <div class="movie-form__row column">
+                 <label for="author">Author</label>
+                 <input id="author" type="text" placeholder="Type author">
+             </div>
+              <div class="movie-form__row column">
+                  <label for="description">Description</label>
+                  <textarea id="description" type="text" value="description" placeholder="Type description" rows="10"></textarea>
+              </div>
+               <div class="movie-form__row radio-buttons">
+                   <p>Availability: </p>
+                   <label for="true">Yes</label>
+                   <input id="true" type="radio" value="true" name="availability" required>
+                   <label for="false">No</label>
+                   <input id="false" type="radio" value="false" name="availability" required>
+               </div>
+               <div class="movie-form__row">
+                   <label for="date">Release Year</label>
+                   <input id="year" type="date" value="date">
+               </div>
+               <button class="btn submit-btn" type="submit">Add Movie</button>
+        </form>
+    </div>
+</body>
+</html>

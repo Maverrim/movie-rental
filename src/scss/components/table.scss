@@ -1,0 +1,31 @@
+// @import '../base/reset';
+// @import '../base/typography';
+// @import '../abstracts/config';
+// @import '../base/reset';
+
+
+.movie-table {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    // overflow-x: scroll;
+    margin-bottom: 5rem;
+
+    thead {
+        border: 1px solid black;
+        text-transform: uppercase;
+    }
+
+    thead td {
+        font-weight: 700;
+        padding: 10px;
+    }
+
+    tbody td {
+        padding: 10px 20px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgb(235, 235, 235);
+    }
+}

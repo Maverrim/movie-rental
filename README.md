@@ -5,5 +5,6 @@ Included:
 * SCSS
 * WEBPACK
 
-Type in terminal "npm run dev" to run project server.
-Type in terminal "npm run build" to build ;) project.
+1. Type in terminal "npm i --save-dev".
+2. Type in terminal "npm run dev" to run project server.
+3. Type in terminal "npm run build" to build ;) project.
